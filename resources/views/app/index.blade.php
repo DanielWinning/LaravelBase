@@ -50,7 +50,7 @@
             @else
                 <div class="text-gray-500 mt-6">
                     <p class="my-3">Welcome to your new Laravel application.</p>
-                    <p class="my-3">You'll need to <a href="/login" class="underline text-blue-500">login</a> or <a href="/register" class="underline text-blue-500">register</a> to access more of the application.</p>
+                    <p class="my-3">You'll need to <a href="/login" class="underline text-blue-500">login</a> or <a href="/register" class="underline text-blue-500">register</a> to access more features of the application.</p>
                 </div>
             @endauth
         </div>
