@@ -33,6 +33,8 @@ php artisan key:generate
 
 That's it, now you can carry on building your project as you normally would.
 
+<div id="included"></div>
+
 ##What's Included?
 
 ### Breeze
@@ -56,7 +58,8 @@ already setup are `app.scss` and `admin.scss`, setup to include Tailwind and `we
 allowing you to "build" your Tailwind and SCSS immediately. As always, you can run `npm run watch`, `npm run dev` or 
 `npm run production` to compile your assets.
 
-By default, this app has been set up to compile your CSS to `public/assets/css` and JS to `public/assets/js`.
+By default, this app has been set up to compile your CSS to `public/assets/css` and JS to `public/assets/js`. The files `app.scss` and
+`admin.scss` have been included as a starting point.
 
 ### Helpers
 
