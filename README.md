@@ -4,23 +4,20 @@ When I'm setting up a new Laravel project, there tends to be a load of scaffoldi
 use the same general workflow and end up using the same tools on a number of different projects. *Breezy* aims to ease some of this setup by including
 most of my required tools from the start - including (in case you haven't guessed it), Breeze.
 
-I find that by default, Breeze is a bit messy - I don't want a load of auth components I'm never going to 
-use again clogging up my components directory for example. I've *cleaned up* (I know, this is a bit subjective) the Breeze installation
-and installed a load of tools ready to go. Think of *Breezy* as a super minimal Laravel authentication setup with some handy little tools included.
+Think of *Breezy* as a super minimal Laravel authentication setup with some handy little tools included.
 
 **This is built to work with my go-to workflow and may not have the desired tools for everyone's needs.**
 
-This is a basic Laravel setup including the following:
+- <a href="#usage">Usage</a>
+- <a href="#included">What's included?</a>
 
-- **Breeze** - includes better organised component directories, minimal layouts. `HOME` is now set to `/`
-- **Tailwind** - Tailwind setup, including `laravel-mix-tailwind`
-- **SASS** - included and ready to go, as well as being separated into logical files inside `resources/scss`. Mix
-has been modified to work with the current directory structure
-- **Helpers** - a `helpers.php` file inside the `app` directory, autoloaded in `composer.json`
-- **Users** - a slightly modified user model and two seeded users - a super user and a standard user.
+<div id="usage"></div>
 
-## Using this project
-First of all, fork this repo. Make sure to set these values in your `.env` and enter your applications database settings:
+##  Usage
+
+To get started, simply fork this repo. Then copy your projects `.env.example` file to `.env`, making sure to set your 
+database credentials. Then make sure to set the following variables, which will be used when running the `UserSeeder`:
+
 ```
 DEFAULT_ADMIN_PASSWORD=
 DEFAULT_ADMIN_EMAIL=
@@ -33,4 +30,44 @@ npm install && npm run dev
 php artisan migrate:fresh --seed
 php artisan key:generate
 ```
+
+That's it, now you can carry on building your project as you normally would.
+
+##What's Included?
+
+### Breeze
+
+I find that by default, Breeze is a bit messy - I don't want a load of auth components I'm never going to
+use again clogging up my components directory for example. I've *cleaned up* (I know, this is a bit subjective) a bit; moved
+Breeze components into their own directory and refactored components and views to match.
+
+The dashboard has been removed and the `HOME` variable has been set to `/` (as opposed to `/dashboard`), so, by default, 
+users redirect to the homepage of your application when logging in.
+
+### Tailwind
+
+Tailwind has become my go-to CSS tooling, this has been installed and included in `webpack.mix.js`, ready to be used straight
+away.
+
+### SASS
+
+My CSS pre-processor of choice, included by default. By default, the SCSS files can be found in `resources/scss` - 
+already setup are `app.scss` and `admin.scss`, setup to include Tailwind and `webpack.mix.js` has been amended accordingly, 
+allowing you to "build" your Tailwind and SCSS immediately. As always, you can run `npm run watch`, `npm run dev` or 
+`npm run production` to compile your assets.
+
+By default, this app has been set up to compile your CSS to `public/assets/css` and JS to `public/assets/js`.
+
+### Helpers
+
+Inevitably we end up needing to use our own helper functions when building Laravel applications - a handy `app/helpers.php` file
+has been created and autoloaded in `composer.json`.
+
+### Modified Users
+
+The user model has been amended; the `name` column has been removed and `first_name`, `last_name` and `role` have been added.
+A single method - `isSuperUser()` has been added to the user model, required for the default homepage view.
+
+Two user accounts have been included inside the `UserSeeder`, for testing - remember to set your default passwords in your `.env` 
+file.
 
