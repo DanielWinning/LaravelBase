@@ -16,13 +16,13 @@ has been modified to work with the current directory structure
 - **Users** - a slightly modified user model and two seeded users - a super user and a standard user.
 
 ## Using this project
-Be sure to set these values in your `.env` and enter your applications database settings:
+First of all, clone this repo and be sure to set these values in your `.env` and enter your applications database settings:
 ```
 DEFAULT_ADMIN_PASSWORD=
 DEFAULT_ADMIN_EMAIL=
 ```
 
-Then, simply clone this repo and run the following commands:
+Then, run the following commands:
 ```
 composer install
 npm install && npm run dev
