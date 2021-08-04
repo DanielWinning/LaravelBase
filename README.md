@@ -71,3 +71,13 @@ A single method - `isSuperUser()` has been added to the user model, required for
 Two user accounts have been included inside the `UserSeeder`, for testing - remember to set your default passwords in your `.env` 
 file.
 
+### Views
+
+The default view for the homepage has been changed, with a minimal, relevant directory structure in place for views - some boilerplate stuff.
+Your project will load `app/index.blade.php` at first, which will display a welcome message and links to login and register. If you log in as the
+demo `super_user` account, you'll be shown a list of your applications routes. This is a minimal Vue page, serving as an example, or it can be kept
+for reference whilst you're developing your application.
+
+A super minimal `<x-app-layout>` component is included, which loads Vue via a CDN. Feel free to remove this and add Vue *properly*, if you 
+need Vue that is.
+
