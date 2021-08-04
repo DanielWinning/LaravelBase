@@ -1,5 +1,6 @@
 <x-app-layout>
 
+    <!-- Remove this -->
     @auth
         <div class="w-full bg-blue-500 text-sm text-gray-50">
             <div class="mx-auto max-w-5xl text-right py-1">
@@ -12,7 +13,6 @@
         </div>
     @endauth
 
-    <!-- Remove this -->
     <div v-bind:class="[!auth ? 'flex items-center justify-center' : '', 'mx-auto max-w-5xl py-12 text-center min-h-screen']">
         <div>
             <h1 class="text-3xl font-bold">Welcome to your new Laravel application</h1>
