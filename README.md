@@ -35,7 +35,7 @@ That's it, now you can carry on building your project as you normally would.
 
 <div id="included"></div>
 
-##What's Included?
+## What's Included?
 
 ### Breeze
 
