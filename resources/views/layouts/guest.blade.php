@@ -13,8 +13,6 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset("assets/css/app.css") }}">
 
-        <!-- Scripts -->
-        <script src="{{ asset("assets/js/app.js") }}" defer></script>
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">

@@ -13,18 +13,16 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset("assets/css/app.css") }}">
 
-        <!-- Scripts -->
-        <script src="{{ asset("assets/js/app.js") }}" defer></script>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen bg-gray-200">
             <!-- Page Content -->
             <main id="app">
                 {{ $slot }}
             </main>
         </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+        <!-- Scripts -->
+        <script src="{{ asset("assets/js/app.js") }}" defer></script>
         {{ $scripts ?? "" }}
     </body>
 </html>
