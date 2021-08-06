@@ -14,14 +14,14 @@
 
         <!-- Name -->
             <div>
-                <x-auth.label for="first-name" :value="__('Name')"/>
+                <x-auth.label for="first-name" :value="__('First Name')"/>
 
                 <x-auth.input id="first-name" class="block mt-1 w-full" type="text" name="first_name" :value="old('first_name')" required
                               autofocus/>
             </div>
 
-            <div>
-                <x-auth.label for="last-name" :value="__('Name')"/>
+            <div class="mt-4">
+                <x-auth.label for="last-name" :value="__('Last Name')"/>
 
                 <x-auth.input id="last-name" class="block mt-1 w-full" type="text" name="last_name" :value="old('last_name')" required
                               autofocus/>
