@@ -6,20 +6,11 @@ module.exports = {
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php"
     ],
-
     theme: {
-        extend: {
-            fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-            },
-        },
+        extend: {},
     },
-
     variants: {
-        extend: {
-            opacity: ['disabled'],
-        },
+        extend: {},
     },
-
-    plugins: [require('@tailwindcss/forms')],
-};
+    plugins: []
+}
