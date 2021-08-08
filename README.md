@@ -46,6 +46,10 @@ Breeze components into their own directory and refactored components and views t
 The dashboard has been removed and the `HOME` variable has been set to `/` (as opposed to `/dashboard`), so, by default, 
 users redirect to the homepage of your application when logging in.
 
+### Vue
+
+Vue is included in the projects `package.json` and a basic, global Vue instance has been setup as `app`.
+
 ### Tailwind
 
 Tailwind has become my go-to CSS tooling, this has been installed and included in `webpack.mix.js`, ready to be used straight
@@ -77,10 +81,7 @@ file.
 ### Views
 
 The default view for the homepage has been changed, with a minimal, relevant directory structure in place for views - some boilerplate stuff.
-Your project will load `app/index.blade.php` at first, which will display a welcome message and links to login and register. If you log in as the
-demo `super_user` account, you'll be shown a list of your applications routes. This is a minimal Vue page, serving as an example, or it can be kept
-for reference whilst you're developing your application.
+Your project will load `app/index.blade.php` at first, which will display a welcome message and links to login and register. 
 
-A super minimal `<x-app-layout>` component is included, which loads Vue via a CDN. Feel free to remove this and add Vue *properly*, if you 
-need Vue that is.
+A super minimal `<x-app-layout>` blade component is included.
 
