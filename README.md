@@ -1,5 +1,7 @@
 # Breezy
 
+**I only keep this public so I can import it into new repos! If anyone else ever uses it I guess that's a bonus!**
+
 When I'm setting up a new Laravel project, there tends to be a load of scaffolding and boring setup to be done first. Most of the time, I
 use the same general workflow and end up using the same tools on a number of different projects. *Breezy* aims to ease some of this setup by including
 most of my required tools from the start - including (in case you haven't guessed it), Breeze.
