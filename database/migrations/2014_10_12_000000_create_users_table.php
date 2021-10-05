@@ -23,6 +23,9 @@ class CreateUsersTable extends Migration
             $table->string("role")->default("user");
             $table->rememberToken();
             $table->softDeletes();
+            $table->timestamp("created_by")->nullable();
+            $table->timestamp("updated_by")->nullable();
+            $table->timestamp("deleted_by")->nullable();
             $table->timestamps();
         });
     }
