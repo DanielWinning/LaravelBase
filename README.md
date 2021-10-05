@@ -17,7 +17,7 @@ Think of *Breezy* as a super minimal Laravel authentication setup with some hand
 
 ##  Usage
 
-To get started, simply fork this repo. Then copy your projects `.env.example` file to `.env`, making sure to set your 
+To get started, simply import this repo to your own and clone your repo. Then copy your projects `.env.example` file to `.env`, making sure to set your 
 database credentials. Then make sure to set the following variables, which will be used when running the `UserSeeder`:
 
 ```
