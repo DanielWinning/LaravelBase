@@ -1,12 +1,8 @@
 # Laravel Starter Template
 
-**I only keep this public so I can import it into new repos! If anyone else ever uses it I guess that's a bonus!**
+**I only keep this public so I can use it in new repos. If anyone else ever uses it I guess that's a bonus!**
 
-When I'm setting up a new Laravel project, there tends to be a load of scaffolding and boring setup to be done first. Most of the time, I
-use the same general workflow and end up using the same tools on a number of different projects. *Breezy* aims to ease some of this setup by including
-most of my required tools from the start - including (in case you haven't guessed it), Breeze.
-
-Think of *Breezy* as a super minimal Laravel authentication setup with some handy little tools included.
+A minimal Laravel authentication setup.
 
 **This is built to work with my go-to workflow and may not have the desired tools for everyone's needs.**
 
@@ -17,8 +13,12 @@ Think of *Breezy* as a super minimal Laravel authentication setup with some hand
 
 ##  Usage
 
-To get started, simply import this repo to your own and clone your repo. Then copy your projects `.env.example` file to `.env`, making sure to set your 
-database credentials. Then make sure to set the following variables, which will be used when running the `UserSeeder`:
+Click the use this template button, then download your repo (GitHub gives you a list of commands after creating your repo). 
+
+Then copy your projects `.env.example` file and rename one to `.env`. Make sure to set your 
+database credentials. 
+
+Then make sure to set the following variables, which will be used when running the `UserSeeder`:
 
 ```
 DEFAULT_ADMIN_PASSWORD=
