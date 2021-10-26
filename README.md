@@ -1,4 +1,4 @@
-# Breezy
+# Laravel Starter Template
 
 **I only keep this public so I can import it into new repos! If anyone else ever uses it I guess that's a bonus!**
 
