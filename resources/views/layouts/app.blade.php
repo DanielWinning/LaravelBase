@@ -7,14 +7,13 @@
 
         <title>{{ config("app.name", "Laravel") }}</title>
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        @include("components.global.google-font", ["fontFamily" => "Poppins"])
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset("assets/css/app.css") }}">
 
     </head>
-    <body class="font-sans antialiased">
+    <body class="antialiased">
         <div class="min-h-screen bg-gray-100">
             <!-- Page Content -->
             <main id="app">
