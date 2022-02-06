@@ -9,6 +9,8 @@ DEFAULT_ADMIN_PASSWORD=
 DEFAULT_ADMIN_EMAIL=
 ```
 
+Update `database/seeders/UserSeeder.php` with your own credentials.
+
 **Then run the following commands:**
 ```
 composer install
