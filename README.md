@@ -1,7 +1,7 @@
 # Laravel Starter Template
 
-A minimal Laravel setup with Breeze, Vue and TailwindCSS installed out of the box. Ready to go for quickly scaffolding 
-a new project.
+A minimal Laravel setup with Breeze, Vue, TailwindCSS and SASS installed out of the box. Auth components have been cleaned up. 
+Ready to go for quickly scaffolding a new project.
 
 **After creating your database and entering DB credentials, make sure to set these variables in your `.env`:**
 ```

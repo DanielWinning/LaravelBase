@@ -5,7 +5,11 @@ module.exports = {
         "./resources/views/**/*.blade.php"
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                primary: ["Poppins", "sans-serif"]
+            }
+        },
     },
     variants: {
         extend: {},
