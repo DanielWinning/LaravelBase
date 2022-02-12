@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{ asset("assets/css/app.css") }}">
 
     </head>
-    <body class="antialiased">
+    <body class="font-primary antialiased">
         <div class="min-h-screen bg-gray-100">
             <!-- Page Content -->
             <main id="app">
