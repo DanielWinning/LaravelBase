@@ -1,7 +1,7 @@
 <template>
-    <div class="w-full min-h-screen flex justify-center items-center">
+    <div class="w-screen min-h-screen flex justify-center items-center">
         <div class="max-w-5xl mx-auto bg-white rounded-md shadow-md p-8 text-gray-500 text-center">
-            <h1 class="text-2xl font-semibold mb-6">Welcome to your new Laravel application</h1>
+            <h1 class="text-2xl font-semibold mb-2">Welcome to your new Laravel application!</h1>
             <div v-if="auth && username !== ''">
                 <p>Welcome back, {{ username }}</p>
                 <form action="/logout" method="post" class="mt-4">
@@ -19,7 +19,7 @@
 <script>
 export default {
     name: "hello",
-    props: ["auth", "username", "_token"],
+    props: ["auth", "username"],
     data() {
         return {
             csrfToken: document.getElementById("csrf-token").content

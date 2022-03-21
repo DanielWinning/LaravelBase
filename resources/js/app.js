@@ -1,4 +1,4 @@
-import Vue from "vue";
+/*import * as Vue from "vue";
 import Hello from "./components/Hello.vue";
 
 const app = new Vue({
@@ -9,4 +9,20 @@ const app = new Vue({
     data: {
         _token: document.getElementById("csrf-token").content
     }
-});
+});*/
+
+import { createApp } from "vue";
+import Hello from "./components/Hello.vue";
+
+let app = createApp({
+    data() {
+        return {
+            _token: document.getElementById("csrf-token").content
+        }
+    },
+    components: {
+        Hello
+    }
+}).mount("#app");
+
+
